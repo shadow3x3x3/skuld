@@ -29,12 +29,14 @@ body {
 .time-texts {
   margin: 0.5em;
   color: whitesmoke;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
   font-size: 10vw;
 }
 
 .buttons-list button {
   border: 0;
   background-color: rgba(0, 0, 0, 0.0);
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
   color: white;
   font-size: 4vw;
 }
