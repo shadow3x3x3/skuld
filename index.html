@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <link rel="stylesheet" href="src/index.css">
+  <title>Skuld</title>
+</head>
+<body>
+  <div id="app">
+    <div class="flex-container">
+      <div class="flex time-texts">
+        {{ minText }} : {{ secText }}
+      </div>
+
+      <div class="flex buttons-list">
+        <button type="button" v-on:click="startTimer">Start</button>
+        <button type="button" v-on:click="stopTimer">Stop</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="src/index.js"></script>
+</body>
+</html>
