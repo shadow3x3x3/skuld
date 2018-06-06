@@ -1,9 +1,15 @@
+const GREEN_COLOR = 'rgb(149, 206, 126)';
+const RED_COLOR = 'rgb(235, 119, 119)';
+
 var app = new Vue({
   el: '#app',
   data: {
     isActive: false,
     minutes: 25,
     seconds: 00,
+    backgroundColor: {
+      'background-color': RED_COLOR
+    }
   },
   methods: {
     startTimer() {
@@ -11,6 +17,7 @@ var app = new Vue({
       this.seconds = 00;
       if (!this.isActive) {
         this.isActive = true;
+        this.backgroundColor['background-color'] = GREEN_COLOR;
         this.decreaseTime();
       }
     },
