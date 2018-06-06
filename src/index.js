@@ -2,13 +2,13 @@ var app = new Vue({
   el: '#app',
   data: {
     isActive: false,
-    minutes: 00,
-    seconds: 10,
+    minutes: 25,
+    seconds: 00,
   },
   methods: {
     startTimer() {
-      this.minutes = 00;
-      this.seconds = 10;
+      this.minutes = 25;
+      this.seconds = 00;
       if (!this.isActive) {
         this.isActive = true;
         this.decreaseTime();
